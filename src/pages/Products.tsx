@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button";
 import productLipstick from "@/assets/product-lipstick.jpg";
 import productPerfume from "@/assets/product-perfume.jpg";
 import productPalette from "@/assets/product-palette.jpg";
+import productFoundation from "@/assets/product-foundation.jpg";
+import productBrushes from "@/assets/product-brushes.jpg";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("الكل");
 
-  const categories = ["الكل", "أحمر شفاه", "عطور", "مكياج", "العناية بالبشرة"];
+  const categories = ["الكل", "أحمر شفاه", "عطور", "مكياج", "فونديشين", "فراشي", "العناية بالبشرة"];
 
   const allProducts = [
     {
@@ -66,6 +68,54 @@ const Products = () => {
       name: "Palette Luxe",
       price: "479 ر.س",
       category: "مكياج",
+    },
+    {
+      image: productFoundation,
+      name: "Foundation Séra Velvet",
+      price: "379 ر.س",
+      category: "فونديشين",
+    },
+    {
+      image: productFoundation,
+      name: "Foundation Séra Glow",
+      price: "399 ر.س",
+      category: "فونديشين",
+    },
+    {
+      image: productFoundation,
+      name: "Foundation Séra Matte",
+      price: "389 ر.س",
+      category: "فونديشين",
+    },
+    {
+      image: productFoundation,
+      name: "Foundation Séra HD",
+      price: "429 ر.س",
+      category: "فونديشين",
+    },
+    {
+      image: productBrushes,
+      name: "Brush Set Professional",
+      price: "599 ر.س",
+      category: "فراشي",
+    },
+    {
+      image: productBrushes,
+      name: "Brush Set Essential",
+      price: "349 ر.س",
+      category: "فراشي",
+    },
+    {
+      image: productBrushes,
+      name: "Brush Set Luxe",
+      price: "749 ر.س",
+      category: "فراشي",
+    },
+    {
+      image: productBrushes,
+      name: "Brush Set Mini",
+      price: "249 ر.س",
+      category: "فراشي",
     },
   ];
 

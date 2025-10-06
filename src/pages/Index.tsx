@@ -60,7 +60,7 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[hsl(var(--sera-pink))] via-[hsl(var(--sera-black))] to-[hsl(var(--sera-red))]">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#FFB6D9] via-[#D63B7B] to-[#FF69B4]">
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10 py-32">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">

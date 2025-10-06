@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import { Sparkles, Award, Heart, Zap } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
+import seraModel from "@/assets/sera-model.png";
 import productLipstick from "@/assets/product-lipstick.jpg";
 import productPerfume from "@/assets/product-perfume.jpg";
 import productPalette from "@/assets/product-palette.jpg";
@@ -69,27 +70,42 @@ const Index = () => {
             backgroundPosition: 'center',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--sera-black))] via-[hsl(var(--sera-black))]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--sera-black))]/90 via-[hsl(var(--sera-black))]/60 to-transparent" />
         </div>
 
         {/* Content */}
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
-              <span className="text-white">اكتشفي</span>
-              <br />
-              <span className="text-gradient-gold">السحر الحقيقي</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl">
-              مستحضرات تجميل فاخرة تبرز جمالك الطبيعي بلمسة من الجرأة والإثارة
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="luxury" size="xl" asChild>
-                <Link to="/products">اكتشف المجموعة</Link>
-              </Button>
-              <Button variant="outline_luxury" size="xl" asChild>
-                <Link to="/gallery">شاهد المعرض</Link>
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content */}
+            <div className="animate-fade-in-up">
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
+                <span className="text-white">اكتشفي</span>
+                <br />
+                <span className="text-gradient-gold">السحر الحقيقي</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl">
+                مستحضرات تجميل فاخرة تبرز جمالك الطبيعي بلمسة من الجرأة والإثارة
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="luxury" size="xl" asChild>
+                  <Link to="/products">اكتشف المجموعة</Link>
+                </Button>
+                <Button variant="outline_luxury" size="xl" asChild>
+                  <Link to="/gallery">شاهد المعرض</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Model Image */}
+            <div className="relative animate-scale-in hidden lg:block">
+              <div className="relative">
+                <img
+                  src={seraModel}
+                  alt="Séra Beauty Model"
+                  className="w-full max-w-md mx-auto rounded-2xl shadow-luxury"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--sera-pink))]/20 to-transparent rounded-2xl" />
+              </div>
             </div>
           </div>
         </div>

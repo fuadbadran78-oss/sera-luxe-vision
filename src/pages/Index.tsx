@@ -60,51 +60,46 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${heroBackground})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(var(--sera-black))]/90 via-[hsl(var(--sera-black))]/60 to-transparent" />
-        </div>
-
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[hsl(var(--sera-pink))] via-[hsl(var(--sera-black))] to-[hsl(var(--sera-red))]">
         {/* Content */}
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 relative z-10 py-32">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Text Content */}
-            <div className="animate-fade-in-up">
+            <div className="animate-fade-in-up text-center lg:text-right order-2 lg:order-1">
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
                 <span className="text-white">اكتشفي</span>
                 <br />
                 <span className="text-gradient-gold">السحر الحقيقي</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed max-w-2xl">
+              <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
                 مستحضرات تجميل فاخرة تبرز جمالك الطبيعي بلمسة من الجرأة والإثارة
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
                 <Button variant="luxury" size="xl" asChild>
                   <Link to="/products">اكتشف المجموعة</Link>
                 </Button>
-                <Button variant="outline_luxury" size="xl" asChild>
+                <Button variant="gold" size="xl" asChild>
                   <Link to="/gallery">شاهد المعرض</Link>
                 </Button>
               </div>
             </div>
 
             {/* Model Image */}
-            <div className="relative animate-scale-in hidden lg:block">
-              <div className="relative">
+            <div className="relative animate-scale-in order-1 lg:order-2">
+              <div className="relative group">
+                {/* Glow effect */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(var(--sera-red))] via-[hsl(var(--sera-pink))] to-[hsl(var(--sera-gold))] rounded-3xl opacity-75 blur-2xl animate-glow"></div>
+                
+                {/* Image */}
                 <img
                   src={seraModel}
-                  alt="Séra Beauty Model"
-                  className="w-full max-w-md mx-auto rounded-2xl shadow-luxury"
+                  alt="Séra Beauty Collection"
+                  className="relative w-full max-w-lg mx-auto rounded-3xl shadow-luxury transform transition-smooth group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--sera-pink))]/20 to-transparent rounded-2xl" />
+                
+                {/* Decorative elements */}
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-[hsl(var(--sera-gold))] to-[hsl(var(--sera-gold-dark))] rounded-full blur-3xl opacity-60 animate-pulse"></div>
+                <div className="absolute -top-6 -left-6 w-32 h-32 bg-gradient-to-br from-[hsl(var(--sera-red))] to-[hsl(var(--sera-pink))] rounded-full blur-3xl opacity-60 animate-pulse"></div>
               </div>
             </div>
           </div>

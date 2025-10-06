@@ -88,7 +88,7 @@ const Index = () => {
             <div className="relative animate-scale-in order-1 lg:order-2">
               <div className="relative group">
                 {/* Glow effect */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(var(--sera-red))] via-[hsl(var(--sera-pink))] to-[hsl(var(--sera-gold))] rounded-3xl opacity-75 blur-2xl animate-glow"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(var(--sera-pink))] via-[hsl(var(--sera-pink-light))] to-[hsl(var(--sera-pink))] rounded-3xl opacity-75 blur-2xl animate-glow"></div>
                 
                 {/* Image */}
                 <img

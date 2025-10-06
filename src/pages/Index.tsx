@@ -9,6 +9,8 @@ import seraModel from "@/assets/sera-model.png";
 import productLipstick from "@/assets/product-lipstick.jpg";
 import productPerfume from "@/assets/product-perfume.jpg";
 import productPalette from "@/assets/product-palette.jpg";
+import productFoundation from "@/assets/product-foundation.jpg";
+import productBrushes from "@/assets/product-brushes.jpg";
 
 const Index = () => {
   const featuredProducts = [
@@ -29,6 +31,24 @@ const Index = () => {
       name: "Palette Glamour",
       price: "399 ر.س",
       category: "مكياج",
+    },
+    {
+      image: productFoundation,
+      name: "Foundation Séra Glow",
+      price: "399 ر.س",
+      category: "فونديشين",
+    },
+    {
+      image: productBrushes,
+      name: "Brush Set Professional",
+      price: "599 ر.س",
+      category: "فراشي",
+    },
+    {
+      image: productFoundation,
+      name: "Foundation Séra HD",
+      price: "429 ر.س",
+      category: "فونديشين",
     },
   ];
 
@@ -159,7 +179,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 mb-12">
             {featuredProducts.map((product, index) => (
               <div
                 key={index}

@@ -86,12 +86,11 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             {/* Text Content */}
             <div className="animate-fade-in-up text-center lg:text-right order-2 lg:order-1">
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
-                <span className="text-white">اكتشفي</span>
-                <br />
-                <span className="text-gradient-gold">السحر الحقيقي</span>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-display font-bold mb-4 sm:mb-6 leading-[1.2]">
+                <span className="text-white block">اكتشفي</span>
+                <span className="text-gradient-gold block">السحر الحقيقي</span>
               </h1>
-              <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-6 sm:mb-8 leading-relaxed px-4 sm:px-0">
                 مستحضرات تجميل فاخرة تبرز جمالك الطبيعي بلمسة من الجرأة والإثارة
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-end">
@@ -136,29 +135,29 @@ const Index = () => {
       {/* Features Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground mb-3 sm:mb-4">
               لماذا <span className="text-gradient-gold">Séra</span>؟
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               نقدم لكِ تجربة فريدة من نوعها تجمع بين الفخامة والجودة والإبداع
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-card rounded-xl p-8 shadow-card hover-lift text-center animate-scale-in"
+                className="bg-card rounded-xl p-6 sm:p-8 shadow-card hover-lift text-center animate-scale-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gradient-to-r from-[hsl(var(--sera-red))] to-[hsl(var(--sera-pink))] flex items-center justify-center text-white shadow-luxury">
+                <div className="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-4 sm:mb-6 rounded-full bg-gradient-to-r from-[hsl(var(--sera-red))] to-[hsl(var(--sera-pink))] flex items-center justify-center text-white shadow-luxury">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                <h3 className="text-lg sm:text-xl font-display font-bold text-foreground mb-2 sm:mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -170,16 +169,16 @@ const Index = () => {
       {/* Featured Products Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-4">
+          <div className="text-center mb-12 sm:mb-16 animate-fade-in px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-foreground mb-3 sm:mb-4">
               منتجات <span className="text-gradient-hero">مميزة</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               اختارينا بعناية من أفضل مجموعاتنا الفاخرة
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6 sm:gap-8 mb-12">
             {featuredProducts.map((product, index) => (
               <div
                 key={index}
@@ -206,19 +205,19 @@ const Index = () => {
         
         <div className="container mx-auto px-4 relative z-10 text-center text-white">
           <div className="max-w-3xl mx-auto animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6 px-4">
               انضمي إلى عائلة Séra
             </h2>
-            <p className="text-xl mb-8 text-white/90">
+            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 px-4 leading-relaxed">
               احصلي على خصم 20% على أول طلب واكتشفي عالم الجمال الفاخر
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
               <input
                 type="email"
                 placeholder="أدخلي بريدك الإلكتروني"
-                className="px-6 py-4 rounded-lg bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:border-accent transition-smooth min-w-[300px]"
+                className="w-full sm:min-w-[300px] px-4 sm:px-6 py-3 sm:py-4 rounded-lg bg-white/10 backdrop-blur-sm border-2 border-white/20 text-white placeholder:text-white/60 focus:outline-none focus:border-accent transition-smooth text-base"
               />
-              <Button variant="gold" size="xl">
+              <Button variant="gold" size="xl" className="w-full sm:w-auto">
                 اشتركي الآن
               </Button>
             </div>

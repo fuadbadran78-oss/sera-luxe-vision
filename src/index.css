@@ -19,6 +19,10 @@ All colors MUST be HSL.
     --sera-pink-light: 337 64% 63%;
     --sera-gold-dark: 45 100% 45%;
     --sera-black-soft: 0 0% 15%;
+
+    /* Backward-compat aliases (keep existing classes working) */
+    --sera-red: var(--sera-purple);
+    --sera-red-light: var(--sera-purple-light);
     
     /* Design system mappings */
     --background: 0 0% 100%;
